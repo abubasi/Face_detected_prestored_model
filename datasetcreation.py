@@ -3,9 +3,9 @@ import os
 
 
 haar_file = 'haarcascade_frontalface_default.xml'
+name=str(input('Enter the name : '))
 dataset = 'dataset'
-sub_data = str(input("Enter the name : "))
-print(sub_data)
+sub_data = name
 path = os.path.join(dataset, sub_data)
 
 if not os.path.isdir(path):
